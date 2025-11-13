@@ -304,3 +304,54 @@ footer {
   font-weight: bold;
   font-size: 1.2rem;
   }
+
+  /* Center the delivery address section */
+.delivery-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e1f1f;
+  padding: 40px 0;
+}
+
+/* Style the form container */
+.delivery-form {
+  background-color: #3a2a2a;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  width: 90%;
+  max-width: 600px;
+  color: #fff;
+}
+
+/* Form labels and inputs */
+.delivery-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.delivery-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 6px;
+}
+
+/* Submit button */
+.delivery-form button {
+  background-color: #ff69b4;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delivery-form button:hover {
+  background-color: #ff85c1;
+}
+
