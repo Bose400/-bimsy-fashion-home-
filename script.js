@@ -32,3 +32,6 @@ function payWithPaystack() {
   handler.openIframe();
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+  alert("👗 Welcome to Bimsy Fashion Home & Aso-Ebi! 💖");
+});
