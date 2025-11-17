@@ -209,44 +209,40 @@
     <button onclick="payWithPaystack(20000)">Buy Now</button>
   </div>
 </div>
+<section id="delivery">
+<form name="delivery" method="POST" data-netlify="true" action="/success.html" netlify-honeypot="bot-field" class="delivery-form">
+  <input type="hidden" name="form-name" value="delivery" />
+  <input type="hidden" name="bot-field" />
 
+  <h2>Delivery Address</h2>
+
+  <label>Full Name</label>
+  <input type="text" name="fullname" required />
+
+  <label>Street Address</label>
+  <input type="text" name="street" required />
+
+  <label>City</label>
+  <input type="text" name="city" required />
+
+  <label>State</label>
+  <input type="text" name="state" required />
+
+  <label>Phone Number</label>
+  <input type="tel" name="phone" required />
+
+  <label>Order / Notes (optional)</label>
+  <textarea name="notes" rows="3"></textarea>
+
+  <button type="submit">Submit Address</button>
+</form>
+
+</section>
   <section id="about">
   <h2>About Us</h2>
   <p>Beautiful African outfits for every occasion. Click on Buy Now to pay through transfer or other available payment options, and your order will be delivered to you.
 Free delivery within Abuja. We deliver nationwide.
 If your desired Aso Ebi style is not listed, kindly contact us through WhatsApp, and we’ll share the available designs directly to your DM.</p>
-</section>
-
-<!-- Delivery form (Netlify Forms) -->
-<section class="delivery-section">
-  <form name="delivery" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="delivery-form">
-    <!-- required hidden input -->
-    <input type="hidden" name="form-name" value="delivery" />
-    <!-- honeypot for spam -->
-    <input type="hidden" name="bot-field" />
-
-    <h2>Delivery Address</h2>
-
-    <label>Full Name</label>
-    <input type="text" name="fullname" required />
-
-    <label>Street Address</label>
-    <input type="text" name="street" required />
-
-    <label>City</label>
-    <input type="text" name="city" required />
-
-    <label>State</label>
-    <input type="text" name="state" required />
-
-    <label>Phone Number</label>
-    <input type="tel" name="phone" required />
-
-    <label>Order / Notes (optional)</label>
-    <textarea name="notes" rows="3"></textarea>
-
-    <button type="submit">Submit Address</button>
-  </form>
 </section>
 
 <section id="contact">
