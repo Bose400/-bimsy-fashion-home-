@@ -11,12 +11,13 @@
 <body>
   <header>
     <h1>Bimsy Fashion Home & Aso Ebi</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <header>
+  <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
   </header>
 
   <section id="home" class="hero">
@@ -209,35 +210,69 @@
     <button onclick="payWithPaystack(20000)">Buy Now</button>
   </div>
 </div>
-<section id="delivery">
-<form name="delivery" method="POST" data-netlify="true" action="/success.html" netlify-honeypot="bot-field" class="delivery-form">
-  <input type="hidden" name="form-name" value="delivery" />
-  <input type="hidden" name="bot-field" />
 
-  <h2>Delivery Address</h2>
+<section id="delivery" class="delivery-section">
+    <div class="container">
+      <form name="delivery" method="POST" data-netlify="true" action="success.html" netlify-honeypot="bot-field" class="delivery-form">
+        <input type="hidden" name="form-name" value="delivery" />
+        <input type="hidden" name="bot-field" />
 
-  <label>Full Name</label>
-  <input type="text" name="fullname" required />
+        <h2>Delivery Address</h2>
 
-  <label>Street Address</label>
-  <input type="text" name="street" required />
+        <label>Full Name</label>
+        <input type="text" name="fullname" required />
 
-  <label>City</label>
-  <input type="text" name="city" required />
+        <label>Street Address</label>
+        <input type="text" name="street" required />
 
-  <label>State</label>
-  <input type="text" name="state" required />
+        <label>City</label>
+        <input type="text" name="city" required />
 
-  <label>Phone Number</label>
-  <input type="tel" name="phone" required />
+        <label>State</label>
+        <input type="text" name="state" required />
 
-  <label>Order / Notes (optional)</label>
-  <textarea name="notes" rows="3"></textarea>
+        <label>Phone Number</label>
+        <input type="tel" name="phone" required />
 
-  <button type="submit">Submit Address</button>
-</form>
+        <label>Order / Notes (optional)</label>
+        <textarea name="notes" rows="3"></textarea>
 
+        <button type="submit">Submit Address</button>
+      </form>
+    </div>
+  </section>
+  <section id="gallery">
+  <div class="container">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <div class="item">
+        <img src="images/ankara30.jpg" alt="ankara30" />
+        <p>LUXURY MIXED DESIGN TOP</p>
+        <h4>₦20,000</h4>
+        <button onclick="payWithPaystack(20000)">Buy Now</button>
+      </div>
+
+      <!-- Add more items like this -->
+      <div class="item">
+        <img src="ankara2.jpg" alt="ankara2.jpg"/>
+        <p>ELEGANT ANKARA GOWN LARGE</p>
+        <h4>₦18,000</h4>
+        <button onclick="payWithPaystack(25000)">Buy Now</button>
+      </div>
+
+      <div class="item">
+        <img src="images/asoebi10.jpg" alt="asoebi10.jpg" />
+        <p>ORIGINAL VLISCO HOLLAND 100% COTTON 6Yards</p>
+        <h4>₦65,000</h4>
+        <button onclick="payWithPaystack(18000)">Buy Now</button>
+      </div>
+    </div>
+  </div>
 </section>
+
+  <section id="about">
+    <div class="container">
+
   <section id="about">
   <h2>About Us</h2>
   <p>Beautiful African outfits for every occasion. Click on Buy Now to pay through transfer or other available payment options, and your order will be delivered to you.
