@@ -373,8 +373,6 @@ body, html {
   font-weight: 500;
 }
 
-
-
 section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
@@ -414,6 +412,43 @@ section {
 
 .navbar a:hover {
   background-color: #ff69b4; /* lighter pink on hover */
+}
+
+
+.thank-you-container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.thank-you-container h1 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.thank-you-container p {
+  color: #555;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #444;
 }
 
 
