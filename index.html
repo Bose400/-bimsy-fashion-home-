@@ -210,36 +210,26 @@
   </div>
 </div>
 
-<section>
-<!-- Delivery Form -->
-<section id="delivery" class="delivery-section">
-  <div class="container">
-    <form name="delivery" method="POST" data-netlify="true" action="success.html" netlify-honeypot="bot-field" class="delivery-form">
-      <input type="hidden" name="form-name" value="delivery" />
-      <input type="hidden" name="bot-field" />
+ <section id="delivery-address">
+  <div class="form-container">
 
-      <h2>Delivery Address</h2>
+    <p class="note">After placing your order, provide your details below.</p>
+
+    <form name="order" method="POST" data-netlify="true" class="styled-form">
+      <input type="hidden" name="form-name" value="order" />
 
       <label>Full Name</label>
-      <input type="text" name="fullname" required />
+      <input type="text" name="name" required />
 
-      <label>Street Address</label>
-      <input type="text" name="street" required />
+      <label>Contact Address</label>
+      <input type="text" name="address" required />
 
-      <label>City</label>
-      <input type="text" name="city" required />
+      <label>Order Name</label>
+      <input type="text" name="order_name" required />
 
-      <label>State</label>
-      <input type="text" name="state" required />
-
-      <label>Phone Number</label>
-      <input type="tel" name="phone" required />
-
-      <label>Order / Notes (optional)</label>
-      <textarea name="notes" rows="3"></textarea>
-
-      <button type="submit">Submit Address</button>
+      <button type="submit">Submit</button>
     </form>
+
   </div>
 </section>
 
